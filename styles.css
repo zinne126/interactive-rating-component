@@ -1,0 +1,125 @@
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, h2, p{
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    line-height: 1.5;
+    background-color:hsl(216, 12%, 8%);
+    color: #fff;
+    place-items: center;
+    font-size: 15px;
+}
+
+button{
+    background-color: transparent;
+    border: transparent;
+}
+
+.dark-card{
+    max-width: 22rem;
+    background-color: hsl(213, 19%, 18%);
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    margin-top: 3rem;
+    margin-left: 19rem;
+}
+.dark-card>*:not(div:first-child){
+    margin-top: 1rem;
+}
+
+.cardd, .btn-rating{
+    width: 2rem;
+    aspect-ratio: 1;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.btn-container button:hover{
+    background-color: hsl(25, 97%, 53%);
+}
+.btn-container button:focus{
+    background-color: hsl(217, 12%, 63%);
+}
+
+.dark-card p{
+    color: #fff;
+}
+
+.btn-container{
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-rating{
+    width: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.btn-rating:hover{
+    background-color: hsl(216, 12%, 54%);
+    font-weight: 700;
+}
+
+.submit-btn{
+    width: 100%;
+    border-radius: 1.5rem;
+    background-color:hsl(25, 97%, 53%);
+    padding-block: 0.35rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.submit-btn:hover{
+    background-color: hsl(0, 30%, 96%);
+    color: #000;
+}
+
+
+.thank-you-container{
+    padding-inline: 2.5em;
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
+.thank-you-container img{
+    margin-inline: auto;
+    max-width: 50%;
+}
+.thank-you-container p{
+        width: 110%;
+        font-size: 1em;
+        color: hsl(216, 12%, 54%);
+}
+.thank-you-container p.rating-result {
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    max-width: 51%;
+    margin-inline: auto;
+    border-radius: 1rem;
+}
+
+
+@media screen and (max-width: 280px){
+    .dark-card{
+        max-width: 17rem;
+        margin-inline: auto;
+    }
+
+    .rating-result{
+        max-width: 75%;
+    }
+}
